@@ -1,9 +1,9 @@
 # Lab 9: English Prelab and Postlab
 
-The English deliverables are in `output/pdf/en/`:
+The English deliverables are in `output/pdf/`:
 
-- `lab9_prelab_postlab_en.pdf`: the compiled report.
-- `lab9_prelab_postlab_en.tex`: LaTeX source with TikZ diagrams and companion reference images.
+- `lab9_prelab_postlab.pdf`: the compiled report.
+- `lab9_prelab_postlab.tex`: LaTeX source with TikZ diagrams and companion reference images.
 - `verification.json`: actual offline Boolean checks and minimum-SOP results.
 - `theoretical_expected_results.csv`: expected segment, Gray, and excess-3 values.
 - `theoretical_hex7seg.vcd`: a zero-delay theoretical waveform, not a ModelSim record.
@@ -29,15 +29,15 @@ Use XeLaTeX with Latin Modern, TikZ, and the standard math/table packages. The E
 source does not require Chinese fonts or ctex. In PowerShell at the package root:
 
 ```powershell
-.\build_pdf_en.ps1
+.\build_pdf.ps1
 ```
 
-Or compile `lab9_prelab_postlab_en.tex` three times in `output/pdf/en/`:
+Or compile `lab9_prelab_postlab.tex` three times in `output/pdf/`:
 
 ```powershell
-xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab_en.tex
-xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab_en.tex
-xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab_en.tex
+xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab.tex
+xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab.tex
+xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab.tex
 ```
 
 On Overleaf, upload the .tex file and its companion images/ folder, then select XeLaTeX. The appendix includes attributed external circuit illustrations, clickable source URLs, and differences from this experiment.
@@ -48,11 +48,11 @@ Use Python 3.10 or later:
 
 ```powershell
 python -m pip install sympy
-python build_lab9_en.py
-.\build_pdf_en.ps1
+python build_lab9.py
+.\build_pdf.ps1
 ```
 
-Keep `build_lab9.py` beside the English generator: it provides the shared computational
+Keep `lab9_logic.py` beside the English generator: it provides the shared computational
 functions; the Chinese report generator and deliverables have been removed. The checker independently
 enumerates all 81 cubes and solves the single-output covering problems to confirm minimum
 term counts and the minimum literal counts at those term counts. It also checks the

@@ -1,0 +1,16 @@
+{
+  "lab9_logic.py": "625038fc5ebd90c03dda35fbbad51a968ff5797bba6ab37a64f8d5004b112ef1",
+  "build_lab9.py": "3c26cef0100800c7cd61d02ba1e2f254ea67cd209709c40e20694311471c87a6",
+  "build_pdf.ps1": "1db3061f233d3ebab9d14dd23ff23eca23e0c012ae67da32f1d6aca7dc50534c",
+  "README.md": "a1c2342c857a6e44c0475e3ff69fb1b01b1a823cc2e937f70542fd3d83b29767",
+  "output/pdf/lab9_prelab_postlab.pdf": "68aee0398f1cd78a7388ea05a14af2d875e47a92a64b727c515c2aa5f9233c9f",
+  "output/pdf/lab9_prelab_postlab.tex": "279c56eda39923fd32d121fa667f5c926271d8fa124814f489c0265948375e64",
+  "output/pdf/verification.json": "581770203011c572f650de8284a69fab7a0f568d0b35d2ca37e7cd95c8dbe1a3",
+  "output/pdf/theoretical_expected_results.csv": "b3460e41c3c50bd55a73652aa8e5bbb3b9f1ebb6d24b59451d3c6d01664ba672",
+  "output/pdf/theoretical_hex7seg.vcd": "f6aa4a2226059a0cf184da92b1d4da5b81df61a595c18214ae7e692e1a621907",
+  "report_web_references.py": "e89c3e948f1b3b55c85883a736c6059ba79831346bbb8cdb23b4e47bf6276995",
+  "output/pdf/images/alu-basic.png": "ead339358b6cde779d71400b80526384e88afc9a2064ba0f23e4c9775ab16878",
+  "output/pdf/images/converters-combined.jpeg": "a77f4ef3133ee991a7a276659a4223040931c9ec6bcd180014c18786a739b932",
+  "output/pdf/images/gray-4bit.png": "5c2a3b2badcce7127ed4e08348901ba0335b4d1589d07490fdd77a045fd1d519",
+  "output/pdf/images/hex7-schematic.png": "c285dd7c7de6614c4f940ddb68ef28b9463210813720610828179b4d623c6042"
+}

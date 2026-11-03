@@ -21,7 +21,7 @@
 \title{\textbf{Lab 9: Seven-Segment Displays\\and Code Converters}\\[0.5em]\large Complete Prelab and Postlab Derivations}
 \author{Name: \underline{\hspace{3cm}}\qquad Student ID: \underline{\hspace{3cm}}}
 \date{Course: CPE100L\qquad Experiment date: \underline{\hspace{2.5cm}}}
-\graphicspath{{output/pdf/en/}{./}}
+\graphicspath{{output/pdf/}{./}}
 \begin{document}
 \maketitle
 \begin{center}\large\textcolor{accent}{Karnaugh maps -- Boolean minimization -- Circuit connections}\end{center}
@@ -2258,24 +2258,24 @@ Three project archives and links & Provide actual decoder, ALU-display, and conv
 
 \appendix
 \clearpage\section{Compilation and reproduction without Quartus}
-The file \texttt{lab9\_prelab\_postlab\_en.tex} uses TikZ for the design diagrams and a companion images folder for the external reference illustrations. Keep that folder beside the .tex file when compiling. Compile it with XeLaTeX three times to update
+The file \texttt{lab9\_prelab\_postlab.tex} uses TikZ for the design diagrams and a companion images folder for the external reference illustrations. Keep that folder beside the .tex file when compiling. Compile it with XeLaTeX three times to update
 the contents and cross-references:
 \begin{verbatim}
-xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab_en.tex
-xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab_en.tex
-xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab_en.tex
+xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab.tex
+xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab.tex
+xelatex -interaction=nonstopmode -halt-on-error lab9_prelab_postlab.tex
 \end{verbatim}
 The English version uses the standard article class and Latin Modern fonts; no Chinese
 fonts or ctex package are required. On Overleaf, select XeLaTeX and upload the .tex file together with its images folder.
 Common math packages, TikZ, booktabs, fancyhdr, enumitem, and hyperref are required.
 
-Alternatively, run \texttt{build\_pdf\_en.ps1} from the package root in PowerShell.
+Alternatively, run \texttt{build\_pdf.ps1} from the package root in PowerShell.
 To regenerate the derivations, checks, CSV, and theoretical VCD, use Python 3.10 or later:
 \begin{verbatim}
 python -m pip install sympy
-python build_lab9_en.py
+python build_lab9.py
 \end{verbatim}
-Keep \texttt{build\_lab9.py} beside the English generator: it supplies the shared logic
+Keep \texttt{lab9\_logic.py} beside the English generator: it supplies the shared logic
 engine and is imported without generating the Chinese report. Regenerating overwrites
 the English .tex file, so back up hand edits first. The VCD contains zero-delay theoretical
 values; the CSV contains expected answers, not board observations.
