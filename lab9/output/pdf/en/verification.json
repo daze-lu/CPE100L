@@ -1,0 +1,336 @@
+{
+  "status": "PASS",
+  "scope": "offline Boolean equations and settled logical values only; no FPGA or Quartus execution",
+  "counts": {
+    "bcd_input_codes": 10,
+    "hex_input_codes": 16,
+    "excess3_valid_inputs": 10,
+    "gray_inputs": 16,
+    "gray_adjacent_pairs": 15,
+    "alu_cases": 64,
+    "letter_codes": 4,
+    "independent_sop_optimality_checks": 18
+  },
+  "functions": {
+    "bcd": [
+      {
+        "output": "a",
+        "expression": "(C & ~A & ~B) | (A & ~B & ~C & ~D)",
+        "on_set": [
+          1,
+          4
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 2,
+        "minimum_literals_at_minimum_terms": 7
+      },
+      {
+        "output": "b",
+        "expression": "(A & C & ~B) | (B & C & ~A)",
+        "on_set": [
+          5,
+          6
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 2,
+        "minimum_literals_at_minimum_terms": 6
+      },
+      {
+        "output": "c",
+        "expression": "B & ~A & ~C",
+        "on_set": [
+          2
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 1,
+        "minimum_literals_at_minimum_terms": 3
+      },
+      {
+        "output": "d",
+        "expression": "(A & B & C) | (C & ~A & ~B) | (A & ~B & ~C & ~D)",
+        "on_set": [
+          1,
+          4,
+          7
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 10
+      },
+      {
+        "output": "e",
+        "expression": "A | (C & ~B)",
+        "on_set": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 2,
+        "minimum_literals_at_minimum_terms": 3
+      },
+      {
+        "output": "f",
+        "expression": "(A & B) | (B & ~C) | (A & ~C & ~D)",
+        "on_set": [
+          1,
+          2,
+          3,
+          7
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 7
+      },
+      {
+        "output": "g",
+        "expression": "(A & B & C) | (~B & ~C & ~D)",
+        "on_set": [
+          0,
+          1,
+          7
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 2,
+        "minimum_literals_at_minimum_terms": 6
+      }
+    ],
+    "hex": [
+      {
+        "output": "a",
+        "expression": "(A & B & D & ~C) | (A & C & D & ~B) | (A & ~B & ~C & ~D) | (C & ~A & ~B & ~D)",
+        "on_set": [
+          1,
+          4,
+          11,
+          13
+        ],
+        "dont_cares": [],
+        "minimum_terms": 4,
+        "minimum_literals_at_minimum_terms": 16
+      },
+      {
+        "output": "b",
+        "expression": "(A & B & D) | (B & C & ~A) | (C & D & ~A) | (A & C & ~B & ~D)",
+        "on_set": [
+          5,
+          6,
+          11,
+          12,
+          14,
+          15
+        ],
+        "dont_cares": [],
+        "minimum_terms": 4,
+        "minimum_literals_at_minimum_terms": 13
+      },
+      {
+        "output": "c",
+        "expression": "(B & C & D) | (C & D & ~A) | (B & ~A & ~C & ~D)",
+        "on_set": [
+          2,
+          12,
+          14,
+          15
+        ],
+        "dont_cares": [],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 10
+      },
+      {
+        "output": "d",
+        "expression": "(A & B & C) | (B & D & ~A & ~C) | (A & ~B & ~C & ~D) | (C & ~A & ~B & ~D)",
+        "on_set": [
+          1,
+          4,
+          7,
+          10,
+          15
+        ],
+        "dont_cares": [],
+        "minimum_terms": 4,
+        "minimum_literals_at_minimum_terms": 15
+      },
+      {
+        "output": "e",
+        "expression": "(A & ~D) | (A & ~B & ~C) | (C & ~B & ~D)",
+        "on_set": [
+          1,
+          3,
+          4,
+          5,
+          7,
+          9
+        ],
+        "dont_cares": [],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 8
+      },
+      {
+        "output": "f",
+        "expression": "(A & B & ~D) | (A & ~C & ~D) | (B & ~C & ~D) | (A & C & D & ~B)",
+        "on_set": [
+          1,
+          2,
+          3,
+          7,
+          13
+        ],
+        "dont_cares": [],
+        "minimum_terms": 4,
+        "minimum_literals_at_minimum_terms": 13
+      },
+      {
+        "output": "g",
+        "expression": "(A & B & C & ~D) | (~B & ~C & ~D) | (C & D & ~A & ~B)",
+        "on_set": [
+          0,
+          1,
+          7,
+          12
+        ],
+        "dont_cares": [],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 11
+      }
+    ],
+    "excess3": [
+      {
+        "output": "z_3",
+        "expression": "D | (A & C) | (B & C)",
+        "on_set": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 5
+      },
+      {
+        "output": "z_2",
+        "expression": "(A & ~C) | (B & ~C) | (C & ~A & ~B)",
+        "on_set": [
+          1,
+          2,
+          3,
+          4,
+          9
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 3,
+        "minimum_literals_at_minimum_terms": 7
+      },
+      {
+        "output": "z_1",
+        "expression": "(A & B) | (~A & ~B)",
+        "on_set": [
+          0,
+          3,
+          4,
+          7,
+          8
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 2,
+        "minimum_literals_at_minimum_terms": 4
+      },
+      {
+        "output": "z_0",
+        "expression": "~A",
+        "on_set": [
+          0,
+          2,
+          4,
+          6,
+          8
+        ],
+        "dont_cares": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "minimum_terms": 1,
+        "minimum_literals_at_minimum_terms": 1
+      }
+    ]
+  }
+}

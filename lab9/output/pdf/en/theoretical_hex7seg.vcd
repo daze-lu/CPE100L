@@ -1,0 +1,124 @@
+$comment Offline zero-delay theoretical waveform; not ModelSim simulation. $end
+$timescale 1ns $end
+$scope module theoretical_hex7seg $end
+$var wire 1 d0 d0 $end
+$var wire 1 d1 d1 $end
+$var wire 1 d2 d2 $end
+$var wire 1 d3 d3 $end
+$var wire 7 seg abcdefg_active_low $end
+$var wire 4 inp DCBA $end
+$upscope $end
+$enddefinitions $end
+#0
+0d0
+0d1
+0d2
+0d3
+b0000001 seg
+b0000 inp
+#10
+1d0
+0d1
+0d2
+0d3
+b1001111 seg
+b0001 inp
+#20
+0d0
+1d1
+0d2
+0d3
+b0010010 seg
+b0010 inp
+#30
+1d0
+1d1
+0d2
+0d3
+b0000110 seg
+b0011 inp
+#40
+0d0
+0d1
+1d2
+0d3
+b1001100 seg
+b0100 inp
+#50
+1d0
+0d1
+1d2
+0d3
+b0100100 seg
+b0101 inp
+#60
+0d0
+1d1
+1d2
+0d3
+b0100000 seg
+b0110 inp
+#70
+1d0
+1d1
+1d2
+0d3
+b0001111 seg
+b0111 inp
+#80
+0d0
+0d1
+0d2
+1d3
+b0000000 seg
+b1000 inp
+#90
+1d0
+0d1
+0d2
+1d3
+b0000100 seg
+b1001 inp
+#100
+0d0
+1d1
+0d2
+1d3
+b0001000 seg
+b1010 inp
+#110
+1d0
+1d1
+0d2
+1d3
+b1100000 seg
+b1011 inp
+#120
+0d0
+0d1
+1d2
+1d3
+b0110001 seg
+b1100 inp
+#130
+1d0
+0d1
+1d2
+1d3
+b1000010 seg
+b1101 inp
+#140
+0d0
+1d1
+1d2
+1d3
+b0110000 seg
+b1110 inp
+#150
+1d0
+1d1
+1d2
+1d3
+b0111000 seg
+b1111 inp
+#160
